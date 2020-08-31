@@ -1,15 +1,10 @@
 import React from 'react'
-import { Category } from '../Category'
+import { PhotoCard } from '../PhotoCard'
 
-import { List, Item } from './styles'
-import { categories } from '../../../api/db.json'
-
-export const ListOfCategories = () => {
+export const ListOfPhotoCards = () => {
   return (
-    <List>
-      {
-        categories.map(category => <Item key={category.id}><Category {...category} /></Item>)
-      }
-    </List>
+    <ul>
+      {[1, 2, 3].map(id => <PhotoCard key={id} />)}
+    </ul>
   )
 }
