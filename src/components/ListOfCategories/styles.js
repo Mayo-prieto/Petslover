@@ -8,4 +8,5 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   padding: 0 8px;
+  padding-bottom: 20px;
 `
